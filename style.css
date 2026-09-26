@@ -1,0 +1,307 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1628;
+    color: white;
+}
+
+section {
+    padding: 80px 0;
+}
+
+span {
+    color: #2388ff;
+}
+.navbar {
+    background: #111d30;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-brand span {
+    color: #2388ff;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: #2388ff !important;
+}
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #101d31,
+            #071326
+        );
+}
+
+.hello-text {
+    color: #7eb8ff;
+    font-size: 22px;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-section h1 span {
+    color: #2388ff;
+}
+
+.hero-section h3 {
+    font-size: 28px;
+}
+
+.hero-description {
+    max-width: 550px;
+    color: #c5cfdd;
+    line-height: 1.8;
+}
+
+.profile-image {
+    width: 320px;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 3px solid #2388ff;
+
+    box-shadow:
+        0 0 40px rgba(35, 136, 255, 0.3);
+}
+.about-section {
+    background: #f5f8fc;
+    color: #17243a;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    line-height: 1.7;
+}
+a{
+    text-decoration: none;
+}
+
+.skill-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d9e2ef;
+
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h5 {
+    color: #17243a;
+}
+.projects-section {
+    background: #101d30;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.project-card {
+    height: 100%;
+
+    padding: 30px;
+
+    border: 1px solid #38506e;
+
+    border-radius: 12px;
+
+    background: #142238;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #2388ff;
+
+    box-shadow:
+        0 10px 30px rgba(35, 136, 255, 0.15);
+}
+
+.project-card h4 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b8c4d5;
+
+    line-height: 1.7;
+}
+
+.tech-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.tech-tags span {
+    color: white;
+
+    background: #273952;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+.education-section,
+.certification-section {
+    background: #f5f8fc;
+
+    color: #17243a;
+}
+
+.education-card,
+.certificate-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d9e2ef;
+
+    margin-top: 20px;
+}
+
+.certificate-card {
+    height: 100%;
+}
+
+.certificate-card h5 {
+    color: #2388ff;
+}
+.contact-section {
+    background: #101d30;
+}
+
+.contact-section p {
+    color: #c5cfdd;
+
+    line-height: 1.8;
+}
+
+.form-control {
+    background: #243650;
+
+    border: 1px solid #405674;
+
+    color: white;
+
+    padding: 12px;
+}
+
+.form-control:focus {
+    background: #243650;
+
+    color: white;
+
+    border-color: #2388ff;
+
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: #9ba9bc;
+}
+.btn-primary {
+    background: #2388ff;
+
+    border-color: #2388ff;
+
+    padding: 10px 22px;
+}
+
+.btn-primary:hover {
+    background: #0d6edb;
+
+    border-color: #0d6edb;
+}
+
+.btn-outline-light {
+    padding: 10px 22px;
+}
+footer {
+    background: #071221;
+
+    padding: 20px;
+
+    color: #9ba9bc;
+}
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding-top: 120px;
+
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 42px;
+    }
+
+    .hero-section h3 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        margin: auto;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+
+        margin-top: 50px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+}
