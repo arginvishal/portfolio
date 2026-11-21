@@ -101,6 +101,43 @@ span {
 .about-section p {
     line-height: 1.7;
 }
+
+.about-card {
+    height: 100%;
+    padding: 32px;
+    border: 1px solid #d9e2ef;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(23, 36, 58, 0.10);
+}
+
+.about-card h2 {
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.about-card h2::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 48px;
+    height: 3px;
+    border-radius: 2px;
+    background: #2388ff;
+}
+
+.about-info {
+    margin-top: 22px;
+    padding: 18px;
+    border-left: 3px solid #2388ff;
+    border-radius: 8px;
+    background: #f5f8fc;
+}
+
+.about-info p {
+    margin: 8px 0;
+}
 a{
     text-decoration: none;
 }
@@ -192,29 +229,100 @@ a{
 .education-section,
 .certification-section {
     background: #f5f8fc;
-
     color: #17243a;
 }
 
-.education-card,
-.certificate-card {
+.education-section h2 {
+    margin-bottom: 36px;
+    font-size: 36px;
+}
+
+.credential-heading {
+    margin: 0 0 16px;
+    color: #17243a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.education-card {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: white;
-
-    padding: 25px;
-
+    padding: 36px 36px 36px 116px;
     border-radius: 12px;
-
     border: 1px solid #d9e2ef;
+    border-left: 5px solid #2388ff;
+    box-shadow: 0 14px 35px rgba(23, 36, 58, 0.10);
+}
 
-    margin-top: 20px;
+.credential-icon {
+    position: absolute;
+    left: 34px;
+    top: 50%;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #eaf3ff;
+    font-size: 28px;
+}
+
+.education-card h4 {
+    margin: 0 0 12px;
+    color: #17243a;
+    font-size: 22px;
+}
+
+.education-card p {
+    margin: 4px 0;
+    color: #5e6b7d;
+}
+
+.education-card .credential-period {
+    width: fit-content;
+    margin-top: 18px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #edf4ff;
+    color: #1d62bd;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .certificate-card {
+    min-height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+    padding: 22px 24px;
+    border: 1px solid #d9e2ef;
+    border-top: 4px solid #2388ff;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(23, 36, 58, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(23, 36, 58, 0.12);
 }
 
 .certificate-card h5 {
+    margin: 0 0 7px;
     color: #2388ff;
+    font-size: 17px;
+}
+
+.certificate-card p {
+    margin: 0;
+    color: #6a7788;
 }
 .contact-section {
     background: #101d30;
@@ -274,6 +382,29 @@ footer {
     color: #9ba9bc;
 }
 @media (max-width: 768px) {
+
+    .about-card {
+        margin-bottom: 30px;
+        padding: 24px;
+    }
+
+    .education-section h2 {
+        font-size: 30px;
+        margin-bottom: 28px;
+    }
+
+    .education-card {
+        min-height: 220px;
+        margin-bottom: 8px;
+        padding: 28px 24px 28px 92px;
+    }
+
+    .credential-icon {
+        left: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+    }
 
     .hero-section {
         padding-top: 120px;
